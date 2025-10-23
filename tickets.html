@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Tickets - VAULTSEC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container container">
+            <div class="logo">🔒 VAULTSEC</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="customer-dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="orders.html" class="nav-link">Orders</a></li>
+                <li><a href="#" class="nav-link active">Support</a></li>
+                <li><a href="login.html" class="btn-logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 120px;">
+        <!-- HEADER -->
+        <div class="dashboard-header">
+            <h1 class="welcome-user">Support Tickets</h1>
+            <p style="color: #64748b; margin-top: 1rem;">Get help with your VAULTSEC lock</p>
+        </div>
+
+        <!-- TICKET STATS -->
+        <div class="dashboard-grid">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon icon-warning">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                        <div class="card-title">Open Tickets</div>
+                        <div class="card-value">1</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon icon-success">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div>
+                        <div class="card-title">Resolved</div>
+                        <div class="card-value">8</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon icon-primary">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div>
+                        <div class="card-title">Avg Response</div>
+                        <div class="card-value">23 min</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TICKETS TABLE -->
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Ticket ID</th>
+                        <th>Subject</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Priority</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#TKT-00123</td>
+                        <td>Lock not responding</td>
+                        <td>Oct 23, 2025</td>
+                        <td><span class="status pending">Open</span></td>
+                        <td><span style="background: #fee2e2; color: #dc2626; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem;">High</span></td>
+                        <td>
+                            <a href="#" class="btn-action btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i class="fas fa-comments"></i> View
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#TKT-00122</td>
+                        <td>Installation query</td>
+                        <td>Oct 21, 2025</td>
+                        <td><span class="status closed">Closed</span></td>
+                        <td><span style="background: #dcfce7; color: #16a34a; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem;">Low</span></td>
+                        <td>
+                            <a href="#" class="btn-action btn-success" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i class="fas fa-star"></i> Rate
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- CREATE TICKET -->
+        <div class="card" style="margin-top: 2rem; text-align: center;">
+            <h3 style="margin-bottom: 1.5rem;"><i class="fas fa-plus-circle"></i> New Issue?</h3>
+            <p style="color: #64748b; margin-bottom: 2rem;">Create a support ticket or contact us directly</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="#" class="btn-action btn-warning" style="padding: 1rem 2rem;">
+                    <i class="fas fa-edit"></i> Create Ticket
+                </a>
+                <a href="#" class="btn-action btn-success" style="padding: 1rem 2rem;">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Support
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

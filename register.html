@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - VAULTSEC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-container" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+    <div class="login-card">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <h1 style="font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Create Account</h1>
+            <p style="color: #64748b; margin-top: 0.5rem;">Join VAULTSEC in 30 seconds</p>
+        </div>
+
+        <!-- TABS -->
+        <div class="login-tabs">
+            <button class="tab-btn active" onclick="switchTab('customer')">Customer</button>
+            <button class="tab-btn" onclick="switchTab('service')">Service Partner</button>
+        </div>
+
+        <!-- CUSTOMER REGISTER -->
+        <form class="login-form active" id="customer-register">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Rajesh Kumar" required>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="rajesh@example.com" required>
+            </div>
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="tel" placeholder="+91 98765 43210" required>
+            </div>
+            <div class="form-group">
+                <label>Address</label>
+                <textarea rows="3" placeholder="Flat 101, Sunshine Apartments, Gachibowli, Hyderabad" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="Minimum 6 characters" required>
+            </div>
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Re-type password" required>
+            </div>
+            <button type="submit" class="btn-submit">
+                <i class="fas fa-user-plus"></i> Create Customer Account
+            </button>
+            <div style="text-align: center; margin-top: 1.5rem; font-size: 0.9rem; color: #25D366;">
+                ✅ Free account | Instant activation | No credit card required
+            </div>
+        </form>
+
+        <!-- SERVICE REGISTER -->
+        <form class="login-form" id="service-register">
+            <div class="form-group">
+                <label>Service Partner Name</label>
+                <input type="text" placeholder="ABC Security Solutions" required>
+            </div>
+            <div class="form-group">
+                <label>Owner Name</label>
+                <input type="text" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+                <label>Business Email</label>
+                <input type="email" placeholder="john@abcsecurity.com" required>
+            </div>
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="tel" placeholder="+91 98765 43210" required>
+            </div>
+            <div class="form-group">
+                <label>GST Number</label>
+                <input type="text" placeholder="12ABCDE1234F1Z5" required>
+            </div>
+            <div class="form-group">
+                <label>Service Area</label>
+                <input type="text" placeholder="Hyderabad, Secunderabad" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="Minimum 6 characters" required>
+            </div>
+            <button type="submit" class="btn-submit">
+                <i class="fas fa-tools"></i> Apply as Service Partner
+            </button>
+            <div style="text-align: center; margin-top: 1.5rem; font-size: 0.9rem; color: #25D366;">
+                ✅ Free application | Approval in 24 hours | ₹500/install commission
+            </div>
+        </form>
+
+        <div style="text-align: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #e5e7eb;">
+            <p style="margin: 0;">Already have an account? <a href="login.html" style="color: #667eea; font-weight: 600;">Login here</a></p>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(type) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            document.querySelectorAll('.login-form').forEach(form => form.classList.remove('active'));
+            document.getElementById(type + '-register').classList.add('active');
+        }
+
+        // Demo registration
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('✅ Account created successfully!\n\nRedirecting to login...');
+                setTimeout(() => {
+                    window.location.href = 'login.html';
+                }, 1500);
+            });
+        });
+    </script>
+</body>
+</html>

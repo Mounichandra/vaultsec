@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Dashboard - VAULTSEC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container container">
+            <div class="logo">🔒 VAULTSEC</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link active">Dashboard</a></li>
+                <li><a href="tickets.html" class="nav-link">Tickets</a></li>
+                <li><a href="#" class="nav-link">Earnings</a></li>
+                <li><a href="login.html" class="btn-logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 120px;">
+        <!-- DASHBOARD HEADER -->
+        <div class="dashboard-header">
+            <h1 class="welcome-user">Welcome back, ABC Security!</h1>
+            <span class="user-role">Service Partner</span>
+            <p style="color: #64748b; margin-top: 1rem;">Manage installations & tickets</p>
+        </div>
+
+        <!-- STATS CARDS -->
+        <div class="dashboard-grid">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon icon-success">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div>
+                        <div class="card-title">Pending Installs</div>
+                        <div class="card-value">5</div>
+                    </div>
+                </div>
+                <div class="card-change" style="color: #16a34a;">+2 today</div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon icon-primary">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div>
+                        <div class="card-title">Completed</div>
+                        <div class="card-value">23</div>
+                    </div>
+                </div>
+                <div class="card-change" style="color: #16a34a;">₹11,500 earned</div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon icon-warning">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div>
+                        <div class="card-title">Avg Rating</div>
+                        <div class="card-value">4.9</div>
+                    </div>
+                </div>
+                <div class="card-change" style="color: #d97706;">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon icon-danger">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                        <div class="card-title">Next Slot</div>
+                        <div class="card-value">2:30 PM</div>
+                    </div>
+                </div>
+                <div class="card-change" style="color: #16a34a;">Today</div>
+            </div>
+        </div>
+
+        <!-- QUICK ACTIONS -->
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3 style="margin-bottom: 1.5rem;">Quick Actions</h3>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                    <a href="tickets.html" class="btn-action btn-primary">
+                        <i class="fas fa-ticket"></i> View Tickets
+                    </a>
+                    <a href="#" class="btn-action btn-success">
+                        <i class="fas fa-plus"></i> Accept New Job
+                    </a>
+                    <a href="#" class="btn-action btn-warning">
+                        <i class="fas fa-calendar"></i> Schedule
+                    </a>
+                    <a href="#" class="btn-action btn-danger">
+                        <i class="fas fa-file-invoice"></i> Payouts
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- RECENT TICKETS -->
+        <div class="table-responsive">
+            <div style="background: white; padding: 1.5rem; border-radius: 16px; box-shadow: var(--shadow); margin-top: 2rem;">
+                <h3 style="margin-bottom: 1rem;"><i class="fas fa-ticket"></i> Recent Installations</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Ticket ID</th>
+                            <th>Customer</th>
+                            <th>Address</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#SVC-001</td>
+                            <td>Rajesh K.</td>
+                            <td>Gachibowli</td>
+                            <td>2:30 PM</td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td><a href="#" class="btn-action btn-success" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">Accept</a></td>
+                        </tr>
+                        <tr>
+                            <td>#SVC-002</td>
+                            <td>Priya S.</td>
+                            <td>Banjara Hills</td>
+                            <td>4:00 PM</td>
+                            <td><span class="status confirmed">Accepted</span></td>
+                            <td><a href="#" class="btn-action btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">Start</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

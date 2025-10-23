@@ -1,0 +1,22 @@
+{
+  "name": "VAULTSEC Smart Lock",
+  "short_name": "Vaultsec",
+  "description": "India's Unhackable Smart Lock",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiM2NjdlZWEiLz4KPHBhdGggZD0iTTk2IDYwQzEwOS4yIDYwIDEyMCA2OC44IDEyMCA4MEMxMjAgOTEuMiAxMDkuMiAxMDIgOTYgMTAyQzg0Ljc5IDEwMiA3MiA5MS4yIDcyIDgwQzc0IDY4LjggODQuNzkgNjAgOTYgNjBaIiBmaWxsPSIjZmZmIi8+Cjx0ZXh0IHg9Ijk2IiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VkFVTFRTRUM8L3RleHQ+Cjwvc3ZnPgo=",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9IiM2NjdlZWEiLz4KPHBhdGggZD0iTTI1NiAxNjBDMjg5LjIgMTYwIDMyMCAxNzguOCA1MjAgMjgwQzMyMCAyOTEuMiAyODkuMiAzMDIgMjU2IDMwMkMyMjQuOCA1MDIgMjE0IDEyOTEuMiAyMDQgMjgwQzIxNCAyNzguOCA1MjAgMjY4IDUyMCAyNTZDMjIwIDI0NCAyMTQgMjM1LjIgMjA0IDIyNEwyNTYgMTYwWiIgZmlsbD0iI2ZmZiIvPgo8dGV4dCB4PSIyNTYiIHk9IjMyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjQ4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5WQVVMVFNFQzwvdGV4dD4KPC9zdmc+Cg==",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#667eea",
+  "background_color": "#0a0a0a",
+  "orientation": "portrait-primary"
+}

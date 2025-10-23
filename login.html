@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - VAULTSEC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-container">
+    <div class="login-card">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <h1 style="font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">VAULTSEC</h1>
+            <p style="color: #64748b; margin-top: 0.5rem;">Access your dashboard</p>
+        </div>
+
+        <!-- TABS -->
+        <div class="login-tabs">
+            <button class="tab-btn active" onclick="switchTab('customer')">Customer</button>
+            <button class="tab-btn" onclick="switchTab('service')">Service</button>
+        </div>
+
+        <!-- CUSTOMER LOGIN -->
+        <form class="login-form active" id="customer-form">
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="customer@example.com" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn-submit">
+                <i class="fas fa-sign-in-alt"></i> Login as Customer
+            </button>
+        </form>
+
+        <!-- SERVICE LOGIN -->
+        <form class="login-form" id="service-form">
+            <div class="form-group">
+                <label>Service ID</label>
+                <input type="text" placeholder="SVC-12345" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn-submit">
+                <i class="fas fa-tools"></i> Login as Service
+            </button>
+        </form>
+
+        <!-- ✅ NEW REGISTER LINK - ADDED HERE -->
+        <div style="text-align: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #e5e7eb;">
+            <p style="margin: 0;">Don't have an account? <a href="register.html" style="color: #25D366; font-weight: 600;">Create Account</a></p>
+            <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem;"><a href="index.html" style="color: #667eea; text-decoration: none;">← Back to Home</a></p>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(type) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            document.querySelectorAll('.login-form').forEach(form => form.classList.remove('active'));
+            document.getElementById(type + '-form').classList.add('active');
+        }
+
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                setTimeout(() => {
+                    if (this.id === 'customer-form') {
+                        window.location.href = 'customer-dashboard.html';
+                    } else {
+                        window.location.href = 'service-dashboard.html';
+                    }
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

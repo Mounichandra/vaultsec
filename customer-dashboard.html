@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard - VAULTSEC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container container">
+            <div class="logo">🔒 VAULTSEC</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link active">Dashboard</a></li>
+                <li><a href="orders.html" class="nav-link">Orders</a></li>
+                <li><a href="#" class="nav-link">Support</a></li>
+                <li><a href="#" class="btn-logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 120px;">
+        <!-- DASHBOARD HEADER -->
+        <div class="dashboard-header">
+            <h1 class="welcome-user">Welcome back, Rajesh!</h1>
+            <span class="user-role">Customer</span>
+            <p style="color: #64748b; margin-top: 1rem;">Manage your VAULTSEC locks and orders</p>
+        </div>
+
+        <!-- STATS CARDS -->
+        <div class="dashboard-grid">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon icon-success">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div>
+                        <div class="card-title">Active Orders</div>
+                        <div class="card-value">3</div>
+                    </div>
+                </div>
+                <div class="card-change" style="color: #16a34a;">+1 this month</div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon icon-primary">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div>
+                        <div class="card-title">Installed Locks</div>
+                        <div class="card-value">2</div>
+                    </div>
+                </div>
+                <div class="card-change" style="color: #16a34a;">100% Active</div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon icon-warning">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div>
+                        <div class="card-title">Support Tickets</div>
+                        <div class="card-value">1</div>
+                    </div>
+                </div>
+                <div class="card-change" style="color: #d97706;">Pending</div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon icon-danger">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <div>
+                        <div class="card-title">Unlock History</div>
+                        <div class="card-value">247</div>
+                    </div>
+                </div>
+                <div class="card-change" style="color: #16a34a;">+12 today</div>
+            </div>
+        </div>
+
+        <!-- QUICK ACTIONS -->
+        <div class="dashboard-grid" style="margin-top: 2rem;">
+            <div class="card text-center">
+                <h3 style="margin-bottom: 1rem;">Quick Actions</h3>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                    <a href="orders.html" class="btn-action btn-primary">
+                        <i class="fas fa-shopping-bag"></i> View Orders
+                    </a>
+                    <a href="#" class="btn-action btn-success">
+                        <i class="fab fa-whatsapp"></i> Contact Support
+                    </a>
+                    <a href="#" class="btn-action btn-warning">
+                        <i class="fas fa-plus"></i> Add New Lock
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOCIAL LINKS -->
+        <div class="card text-center" style="margin-top: 2rem;">
+            <h3 style="margin-bottom: 1.5rem;">Follow Us</h3>
+            <div class="social-links">
+                <a href="#" class="social-link social-whatsapp" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" class="social-link social-instagram" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link social-youtube" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="social-link social-facebook" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
